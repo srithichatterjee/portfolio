@@ -5,6 +5,7 @@ import underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
   const menuRef = useRef();
