@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
@@ -7,6 +7,7 @@ import location_icon from '../../assets/location_icon.svg'
 
 
 const Contact = () => {
+  const [result, setResult] = useState("");
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
@@ -41,16 +42,21 @@ const Contact = () => {
           <h1>Let's talk</h1>
           <p>I'm always excited to connect, collaborate, or just have a good chat</p>
           <div className="contact-details">
-            <div className="contact-detail">
-              <img src={mail_icon} alt="" /> <p>srithichatterjee@gmail.com</p>
-
-            </div>
-            <div className="contact-detail">
-              <img src={call_icon} alt="" /> <p>9866439324</p>
-            </div>
-            <div className="contact-detail">
-              <img src={location_icon} alt="" /> <p>India</p>
-            </div>
+            <a href="mailto:srithichatterjee@gmail.com" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="contact-detail">
+                <img src={mail_icon} alt="" /> <p>E-mail</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/srithi19" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="contact-detail">
+                <img src={call_icon} alt="" /> <p>Linkedin</p>
+              </div>
+            </a>
+            <a href="https://github.com/srithichatterjee" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
+              <div className="contact-detail">
+                <img src={location_icon} alt="" /> <p>Git-Hub</p>
+              </div>
+            </a>
           </div>
         </div>
         <form onSubmit={onSubmit} className='contact-right'>
@@ -61,6 +67,7 @@ const Contact = () => {
           <label htmlFor=''>Your Message</label>
           <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
           <button type='submit' className="contact-submit">Submit now</button>
+          <span>{result}</span>
         </form>
       </div>
     </div>

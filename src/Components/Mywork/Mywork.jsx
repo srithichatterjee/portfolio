@@ -10,8 +10,16 @@ const Mywork = () => {
             <h1>My latest work</h1>
             <img src={theme_pattern} alt="" />
         </div>
-        <div className="mywork-container">            {mywork_data.map((work, index) => (
-                <img key={index} src={work.w_img} alt="" />
+        <div className="mywork-container">
+            {mywork_data.map((work, index) => (
+                <div key={index} className="mywork-item">
+                    <img src={work.w_img} alt={work.w_name} />
+                    <div className="mywork-info">
+                        <h3>{work.w_name}</h3>
+                        <p dangerouslySetInnerHTML={{ __html: work.w_desc }} />
+                        <a href={work.w_link} target="_blank" rel="noopener noreferrer">Live Link</a>
+                    </div>
+                </div>
             ))}
         </div>
         <div className="mywork-showmore">

@@ -17,46 +17,33 @@ const About = () => {
                 <div className="about-right">
                     <div className="about-para">
                         <p>
-                            Hi, I'm Srithi Chatterjee — a tech enthusiast with skills in
-                            Python, Java, web development, and machine learning. I enjoy
-                            building practical, user-friendly projects like AI chatbots, smart
-                            IoT systems, and responsive websites. I'm always exploring new
-                            technologies and love creating solutions that make a real impact.
+                            Hi, I’m Srithi an enthusiastic learner driven by a deep curiosity for Artificial Intelligence and its potential to shape the future. I am passionate about exploring emerging technologies, understanding how they work, and applying them to solve real-world problems. My journey in AI is fueled by a desire to continuously learn, innovate, and contribute to impactful projects that bridge creativity with technology.
                         </p>
-
                         <p>
                             {" "}
-                            love building smart, user-focused projects that solve real-world
-                            problems
+                            TECH STACK
                         </p>
                     </div>
-                    <div className="about-skills">
-                        <div className="about-skill">
-                            <p>HTML&CSS</p><hr style={{ width: "50%" }} />
-                        </div>
-                        <div className="about-skill">
-                            <p>React JS</p>
-                            <hr style={{ width: "70%" }} />
-                        </div>
-                        <div className="about-skill">
-                            <p>Machine Learning</p>
-                            <hr style={{ width: "60%" }} />
-                        </div>
-                        <div className="about-skill">
-                            <p>Python</p>
-                            <hr style={{ width: "50%" }} />
-                        </div>
+                    <div className="about-skills-grid">
+                        <div className="skill-block">HTML&CSS</div>
+                        <div className="skill-block">React JS</div>
+                        <div className="skill-block">Machine Learning</div>
+                        <div className="skill-block">Python</div>
                     </div>
                 </div>
             </div>
             <div className="about-achievements">
                 <div className="about-achievement">
                     <h1>CODECHEF</h1>
-                    <p>1 Star in codechef with rating 1260</p>
+                    <p>1 Star in codechef with rating 1291</p>
                 </div>
                 <div className="about-achievement">
                     <h1>3+</h1>
                     <p>PROJECTS COMPLETED</p>
+                </div>
+                <div className="about-achievement">
+                    <h1>LeetCode</h1>
+                    <p>Highest Rating 1409</p>
                 </div>
             </div>
         </div>
